@@ -1,0 +1,28 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "node": true
+  },
+  "eslint.validate": [
+    {
+      "language": "typescript",
+      "autoFix": true
+    }
+  ],
+  "printWidth": 120,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "proseWrap": "never",
+  "endOfLine": "auto",
+  "extends": [
+    "plugin:@typescript-eslint/recommended"
+  ]
+}
