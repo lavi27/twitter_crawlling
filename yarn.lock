@@ -206,6 +206,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/cli-progress@npm:^3":
+  version: 3.11.0
+  resolution: "@types/cli-progress@npm:3.11.0"
+  dependencies:
+    "@types/node": "*"
+  checksum: d4401622333e888925b47c5d5bb0b89dddae17cc020f909a64ad7275b326bf3c6e9cd467f625a197fd958a1e49220d32f4a2b0bf2948fee330c719a9b985674e
+  languageName: node
+  linkType: hard
+
 "@types/emscripten@npm:^1.39.6":
   version: 1.39.6
   resolution: "@types/emscripten@npm:1.39.6"
@@ -909,6 +918,15 @@ __metadata:
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
   checksum: 2ac8cd2b2f5ec986a3c743935ec85b07bc174d5421a5efc8017e1f146a1cf5f781ae962618f416352103b32c9cd7e203276e8c28241bbe946160cab16149fb68
+  languageName: node
+  linkType: hard
+
+"cli-progress@npm:^3.11.2":
+  version: 3.11.2
+  resolution: "cli-progress@npm:3.11.2"
+  dependencies:
+    string-width: ^4.2.3
+  checksum: 147d26b80ceaa24d72f0354d1b58b7f3567b928bf5943be879de31cf16b0a4f1d059984e2e35a664d7d27ae3e7fafd69fd94b35f462c8879caf96d7f31eac442
   languageName: node
   linkType: hard
 
@@ -3452,6 +3470,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "twitter_crawlling@workspace:."
   dependencies:
+    "@types/cli-progress": ^3
     "@types/eslint": ^8
     "@types/node": ^18.11.10
     "@types/prettier": ^2
@@ -3459,6 +3478,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.45.0
     "@yarnpkg/sdks": ^3.0.0-rc.32
     axios: ^1.2.0
+    cli-progress: ^3.11.2
     eslint: ^8.0.1
     eslint-config-prettier: ^8.5.0
     eslint-config-standard-with-typescript: latest
