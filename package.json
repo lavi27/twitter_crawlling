@@ -9,8 +9,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=prod ts-node src/index.ts",
-    "dev": "NODE_ENV=dev ts-node-dev --respawn --transpile-only --watch ./src/* ./src/index.ts",
+    "start": "cross-env NODE_ENV=production ts-node src/index.ts",
+    "dev": "cross-env NODE_ENV=development ts-node-dev --respawn --transpile-only ./src/index.ts",
     "watch": "tsc --watch",
     "build": "tsc -p .",
     "lint": "yarn lintfix && yarn lint:prettier",
@@ -34,6 +34,7 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.45.0",
     "@yarnpkg/sdks": "^3.0.0-rc.32",
+    "cross-env": "^7.0.3",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard-with-typescript": "latest",
